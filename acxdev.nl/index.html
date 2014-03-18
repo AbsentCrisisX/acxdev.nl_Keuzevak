@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
+		<title>ACX Development</title>
+        
+        <link rel="stylesheet" href="./css/style.css" />
+        
+        <script src="./js/jquery.js"></script>
+		<script src="./js/jquery-ui.js"></script>
+		<script src="./js/parallax.js"></script>
+        <script src="./js/scrolling.js"></script>
+		<script src="./js/anchor.js"></script>
+		<script src="./js/elements.js"></script>
+		<script src="./js/disable.js"></script>
+        <script src="./js/windowSwitcher.js"></script>
+        
+        <!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="./fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+        
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+        
+        <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+        
+        <script type="text/javascript">
+        	$(document).ready(function(){
+				$('.fancybox').fancybox();
+			});
+        </script>
+	</head>
+
+	<body>
+    	<div style="top: -66px;" id="backToTop" class="backToTop">
+			<a id="top">Terug naar begin</a>
+		</div>
+
+		<section style="background-position: 50% -0.166667px;" id="index" class="default" data-speed="6" data-type="background" data-offsety="0">
+			<a class="anchor" name="indexAnchor"></a>
+			<article style="height: 260px; top: 376px; margin-top: -135px;">
+				<div id="logo">
+					<img src="./img/logo.png" alt="logo" />
+				</div>
+                <p>Een duidelijke website, voor een duidelijke prijs!</p>
+					<button class="left_button about_me">Over Mij</button><button class="profile">Profiel</button><button class="right_button contact">Contact</button>
+			</article>
+		</section>
+
+		<section style="background-position: 50% 117.167px;" id="page1" class="default" data-speed="6" data-type="background" data-offsety="174">
+		<a name="amAnchor" class="anchor"></a>
+			<article class="ambox">
+				<h1>Over Mij</h1>
+				<p>Mijn naam is Jeroen Kraaijkamp en ik ben 22 jaar. Ik ben een 2e jaars informatica student op de Hogeschool Rotterdam. Ik maak graag websites en Android applicaties. Hieronder staan mijn vaardigheden.</p>
+                <ul>
+                	<li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                    <li>Typoscript</li>
+                    <li>Typo3</li>
+                    <li>jQuery</li>
+                    <li>jQuery Mobile</li>
+                    <li>Java</li>
+                    <li>XML</li>
+                </ul>
+                <img alt="Jeroen" src="./img/jeroen.png" width="200" height="200" id="me" />
+                <a href="https://www.facebook.com/jeroen.kraaijkamp" target="_blank"><img alt="facebook" src="./img/facebook.png" width="50" height="50" id="fb" /></a>
+         		<a href="http://www.linkedin.com/pub/jeroen-kraaijkamp/15/746/100" target="_blank"><img alt="linkedin" src="./img/linkedin.png" width="50" height="50" id="linkedin" /></a>
+                <a href="" target="_blank"><img alt="github" src="./img/github.png" width="50" height="50" id="github" /></a>
+                
+			</article>
+		</section>
+
+		<section style="background-position: 50% 68.1667px;" id="page2" class="default" data-speed="6" data-type="background" data-offsety="300">
+		<a name="prAnchor" class="anchor"></a> 	
+			<article class="prbox">
+				<div id="profiel">
+	                <h1>Profiel</h1>
+                    <p><strong>Focus</strong><br />
+                    De focus bij ACX Development ligt op duidelijkheid en betaalbaarheid. We willen dat u, als klant, en wij, als opdrachtnemer, duidelijk weten wat er van elkaar verwacht wordt, zodat beide partijen niet voor onverwachte dingen komen te staan.
+                    </p>
+                    
+                    <p><strong>Betaalbaarheid</strong><br />
+                    Doordat alles duidelijk beschreven is in de opdracht, komt u, als klant niet voor onvoorziene kosten te staan. Ook heeft ACX Development vaste prijzen voor statische websites. Statische websites houden in, dat er geen contentbeheer in zit, of extra elementen zoals een fotogalerij.</p>
+                    
+                    <p><strong>Portfolio</strong><br />
+                    Ook werkt ACX Development aan een tweetal Android applicaties. Om meer informatie over deze applicaties te vinden, klikt u op de onderstaande afbeeldingen om naar de pagina van de betreffende applicatie.</p>
+					<img src="./img/taicon.png" alt="tamago" id="ta" onClick="switchWindow('profiel','tama')" />
+        	        <img src="./img/opicon.png" alt="onepiece" id="op" onClick="switchWindow('profiel','onep')" />
+            	</div>
+                <div id="onep">
+                	<h1>One Piece Soundboard</h1>
+                    <p>One Piece Soundboard is een Android applicatie, gemaakt voor de fans van de japanse animatieserie 'One Piece'. De applicatie bevat de aanvallen van de hoofdpersoon, samen met de titelsongs, en een aantal vaste uitspraken van de vaste karakters.</p>
+                    
+                    <p>De applicatie is door mij en een vriend in ontwikkeling. Om de applicatie beter te bekijken, kunt u op de afbeelding klikken om een grotere afbeelding te zien.</p>
+                    <a class="fancybox" href="./img/opss1.png"><img src="./img/opss1_t.png" alt="One Piece Soundboard Screenshot 1" /></a>
+                    <a class="fancybox" href="./img/opss2.png"><img src="./img/opss2_t.png" alt="One Piece Soundboard Screenshot 2" /></a><br />
+                    <img src="./img/back.png" alt="Terug" onClick="switchWindow('onep','profiel')" />
+                </div>
+                <div id="tama">
+                	<h1>Tamago</h1>
+                    <p>Tamago is een Android applicatie, gebaseerd op de rage uit de jaren '90, de Tamagotchi. De applicatie bestaat uit een virtueel wezentje dat de gebruiker moet opvoeden, en een aantal minispellen, om zo munten te verzamelen om eten te kopen voor het wezentje.</p>
+                    
+                    <p>De applicatie is door mij en twee vrienden in ontwikkeling. Om de applicatie beter te bekijken, kunt u op de afbeelding klikken om een grotere afbeelding te zien.</p>
+                    <a class="fancybox" href="./img/tass1.png"><img src="./img/tass1_t.png" alt="Tamago Screenshot 1" /></a>
+                    <a class="fancybox" href="./img/tass2.png"><img src="./img/tass2_t.png" alt="Tamago Screenshot 2" /></a><br />
+                    <img src="./img/back.png" alt="Terug" onClick="switchWindow('tama','profiel')" />
+                </div>
+        	</article>
+		</section>	
+	
+		<section style="background-position: 50% 51.3333px;" id="page3" class="default" data-speed="6" data-type="background" data-offsety="450">
+		<a name="coAnchor" class="anchor"></a>
+			<article class="cobox">
+				<h1>Contact</h1>
+				<p>Om contact met mij op te nemen, dient u het volgende formulier volledig in te vullen en te versturen.</p>
+                <form action="#">
+                	<table>
+                    	<tr>
+                        	<td>Aanhef:</td>
+                            <td>
+                            	<select name="title">
+                                	<option value="dhr">dhr.</option>
+                                    <option value="mevr.">mevr.</option>
+                            	</select>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>Voornaam:</td>
+                            <td><input type="text" name="firstName" /></td>
+                        </tr>
+                        <tr>
+                        	<td>Achternaam:</td>
+                            <td><input type="text" name="lastName" /></td>
+                        </tr>
+                        <tr>
+                        	<td>Onderwerp:</td>
+                            <td>
+                            	<select name="subject">
+                                	<option value="question">Vraag</option>
+                                    <option value="remark">Opmerking</option>
+                                    <option value="complaint">Klacht</option>
+                                    <option value="other">Overig</option>
+                                </select>                            
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>Bericht:</td>
+                            <td><textarea name="message"></textarea></td>
+                        </tr>
+                        <tr>
+                        	<td colspan="2"><input type="submit" name="submit" value="Bericht verzenden" /></td>
+                        </tr>
+                    </table>
+                </form>
+			</article>
+		</section>
+        
+    <div class="ui-draggable" id="icon_nav" style="position: fixed; right: 20px; width: 45px; max-width: 45px; padding: 10px; border-radius: 4px; background: url(&quot;./img/metaal.jpg&quot;) repeat scroll 0% 0% transparent; z-index: 101; border: 1px solid rgb(119, 119, 119); box-shadow: 0px 0px 20px -4px rgb(0, 0, 0); top: 376px; margin-top: -114px;">
+    	<img class="about_me" src="./img/meicon_b.png" id="meicon" style="margin: 1px 0px; cursor:pointer;" width="45" alt="Over Mij" />
+        <img class="profile" src="./img/proicon_b.png" id="proicon" style="margin: 1px 0px; cursor:pointer;" width="45" alt="Profiel" />
+        <img class="contact" src="./img/conicon_b.png" id="conicon" style="margin: 1px 0px; cursor:pointer;" width="45" alt="Contact" />
+    </div>
+	</body>
+</html>

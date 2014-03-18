@@ -1,0 +1,287 @@
+body{
+	margin: 0;
+	font-family:Verdana, Helvetica, sans-serif;
+}
+
+
+article table {
+	font-size:14px;
+	margin:0;
+	padding:0;
+}
+
+article h2, #SLC h2 { 
+	 
+	font-size: 30px; 
+	margin: 25px 0; 
+	line-height: 1em; 
+}
+
+article h3, #SLC h3 { 
+	font-family: arial; 
+	font-size: 18px; 
+	margin: 25px 0; 
+	line-height: 0em; 
+}
+article h4 { 
+	
+    font-size: 20px;
+    line-height: 0;
+    margin: 12px 0;
+}
+.skills{
+	float:left; margin-left:30px;
+}
+.default { 
+	height: 1000px; 
+	padding: 0; 
+	margin: 0; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	margin: 0 auto; 
+	border-top: 1px solid rgba(125,125,125,0.7); 
+	/*border-bottom: 1px solid rgba(0,0,0,0.8); */
+	box-shadow: 0 10px 20px 10px #000000;
+}
+.textbox ul{
+	float:left;
+	margin: 0 40px 15px 0;
+}
+/*.anchorFix{
+	margin-top:-10px;
+}*/
+.anchor{
+	position:absolute;
+	top:0
+}
+	
+#backToTop {
+    background-image: url("../img/metaal.jpg");
+    border: 2px solid #222222;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 17px -6px #000000;
+    color: #EEEEEE;
+    font-size: 22px;
+    font-weight: bold;
+    height: 30px;
+    position: fixed;
+    right: 100px;
+    text-align: center;
+    top: -36px;
+    width: 150px;
+    z-index: 100;
+	display:table;
+	cursor:pointer;
+}
+#backToTop:hover {
+	border: 2px solid #888888;
+    border-radius: 0 0 10px 10px;
+}
+
+#scrollPosition{
+    background-image: url("../img/metaal.jpg");
+    border: 2px solid #222222;
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    box-shadow: 0 0 17px -6px #000000;
+    color: #EEEEEE;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    height: 18px;
+    left: 10px;
+    line-height: 0;
+    position: fixed;
+    text-align: center;
+    width: 65px;
+    z-index: 100;
+}
+
+#index{ 
+	background: url(../img/mountains.jpg) no-repeat fixed;
+}
+
+#page1 { 
+	background: url(../img/canyon.jpg) no-repeat fixed;
+}
+
+#page2 { 
+	background: url(../img/field.jpg) no-repeat fixed; 
+}
+
+#page3 { 
+	background: url(../img/beach.jpg) no-repeat fixed; 
+}
+
+
+#index, #page1, #page2, #page3{
+	background-size: cover; 	
+}
+
+#index article { 
+	width: 100%; 
+	position: relative; 
+	text-align: center; 
+	background: url(../img/metaal.jpg);
+	box-shadow:0px 0px 60px 10px #333;
+	border: 1px solid #777777;
+	border-left: 0px;
+	border-right:0px;
+	z-index:10;
+
+}
+
+#index article p{ 
+	color: #ccc;
+	z-index:10;	
+	margin-bottom: 10px;
+	font-size: 60px; 
+	margin-top:-10px;
+	z-index:10;
+	position:relative;
+	font-size: 40px;
+}
+#index article button{
+	background: #222222;
+	border:1px solid #222;
+	border-top: 1px solid #777777;
+	border-bottom: 1px solid #111;
+	margin: 0px 0px 0px 0px ;
+	position: relative;
+	padding: 10px 20px;
+	color:#FFFFFF;
+	cursor:pointer;
+	box-shadow: 0px 10px 10px -5px #000000 inset;
+	font-size:16px;
+	margin-bottom:-1px;
+}
+.left_button{
+	border-left: 1px solid #777777!important;
+	border-radius:10px 0px 0px 0px!important;
+	box-shadow: 10px 10px 10px -5px #000000 inset !important;
+}
+.right_button{
+	border-right: 1px solid #777777!important;
+	border-radius:0px 10px 0px 0px!important;
+	box-shadow: -10px 10px 10px -5px #000000 inset !important;
+}
+#index article button:hover{
+	color: #DDD;
+	background: #333;
+}
+
+#index article a:hover { 
+	color: #fff; 
+}
+#index article p {
+    text-shadow: -2px 2px 5px #000000;
+}
+#page1, #page3 { 
+	padding: 50px 0;
+}
+
+#page1 article, #page3 article, #page2 article , #page4 article{
+	background: url(../img/metaal.jpg) repeat #333; 
+	border: 1px solid rgba(150,150,150,0.1);
+	box-shadow: 0 0 25px rgba(0,0,0,0.3);
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+	line-height: 1.5em; 
+	border: 1px solid #777777;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 40px -5px #000000;
+    padding: 15px;
+	display:table;
+	position: relative;
+	top:35px;;
+}
+
+#page1 article, #page3 article { 
+	color: #fff; 
+	width: 900px; 
+	margin-left: 100px; 
+	padding: 10px 20px; 
+	line-height: 1.5em; 
+}
+
+#page1 article img {
+	float: right;		
+}
+
+#page1 article img#me {
+	margin-top: -285px;
+}
+
+#page1 article a img#fb {
+	margin-top: -60px;
+	margin-right: 120px;
+}
+
+#page1 article a img#linkedin {
+	margin-top: -60px;
+	margin-right: 60px;
+}
+
+#page1 article a img#github {
+	margin-top: -60px;
+}
+
+#page1 article p ,#page3 article p { 
+	margin-bottom: 5px; 
+}
+
+#page2 article img {
+	float: right;
+}
+
+#page2 article img#op {
+	margin-right: 10px;
+}
+
+#onep, #tama {
+	display: none;	
+}
+
+#onep img, #tama img {
+	float: none !important;	
+}
+
+#page2 article , #page4 article { 
+	right: 100px;
+	color: #fff; 
+	position: absolute; 
+	width:900px;
+	top: 50px; 
+}
+#page2 article p, #page4 article p { 
+	margin-bottom: 25px; 
+}
+#page2 article img {
+	cursor: pointer;	
+}
+#page3 article table {
+	width: 100%;
+	border:none;
+}
+
+/* logo */
+#logo {
+	background: none;
+    margin: 39px auto 0;
+    position: relative;
+    z-index: 0;
+}
+
+
+.navigation{
+	position: absolute; right:0px; top:35%;
+}
+.navigationTopButton, .navigationBottomButton {
+	background: #222222; border:1px solid #444444; color:#FFFFFF;font-size:10px;margin:0; width:28px; text-transform: uppercase; padding: 10px; cursor:pointer;
+}
+.navigationBottomButton{
+	border-radius:0px 0px 0px 10px;
+}
+.navigationTopButton{
+	border-radius:10px 0px 0px 0px;
+}
